@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body{
+            background-color: tan;
+        }
+        h1{
+            color: navy;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+        .flex-container > div{
+            padding: 40px;
+            margin: 10px;
+            background-color: bisque;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+          }
+        @media only screen and (max-width: 600px) {
+            body{
+                background-color: teal;
+            }
+            h1{
+                color: mediumvioletred;
+            }
+            .flex-container > div{
+                background-color: azure;
+                height: 400px;
+                width: 500px;
+                justify-content: center;
+                
+            }
+            .flex-container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            } 
+            img{
+                height: 300px;
+                width: 300px;
+            }
+            
+          }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;padding-bottom:20px;">Image Gallery</h1>
+    <div class="flex-container">
+        <div><img src="day61.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower1</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day62.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower2</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day63.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower3</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day64.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower4</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day670.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower5</h4><p style="text-align:center;">Description</p></div>
+    </div>
+    <div class="flex-container">
+        <div><img src="day65.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower6</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day66.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower7</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day67.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower8</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day68.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower9</h4><p style="text-align:center;">Description</p></div>
+        <div><img src="day69.jpg" height="200px" width="150px" class="center"><h4 style="text-align: center;">Flower10</h4><p style="text-align:center;">Description</p></div>
+    </div>
+</body>
+</html>

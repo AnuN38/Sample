@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect center example</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: cadetblue;
+            height: 600px;
+            /* justify-content: center;
+            align-items: center;
+            align-content: center; */
+            
+        }
+        .flex-container > div{
+            padding: 40px;
+            background-color: darkgray;
+            height: 40px;
+            width: 60px;
+            margin: 10px;
+            color: white;
+            width: 100px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div style="order:2;">sample1</div>
+        <div style="flex-grow: 1;flex-shrink: 0;">sample2</div>
+        <div>sample3</div>
+        <div style="flex-shrink: 0;">sample4</div>
+        <div style="flex-shrink: 1;">5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+    
+</body>
+</html>
